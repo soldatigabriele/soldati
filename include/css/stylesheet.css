@@ -236,6 +236,9 @@
 	.home-header{
 		z-index:1;
 	}
+	.products{
+	margin-top: -200px;
+	}
 }
 
 

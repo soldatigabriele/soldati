@@ -1,0 +1,157 @@
+/* css relativi alla sezione di comparazione dei prodotti */
+
+/* testo grigio*/
+.glyphicon{
+	color: #69D75B;
+}
+
+.gray{
+	color: grey; !important
+}
+@media (min-width:924px){
+	#compare>.container{
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+	.pricing_chart{
+		background:white;
+		position: relative;
+		float: left;
+		width: 33.333%;
+		padding: 60px 30px 20px;
+		text-align:center;
+	}
+	.plan_3{
+		border: 0px solid #aaa;
+	}
+	#compare .list_out{
+		width:320px;
+		margin: 0 auto;
+	}
+	#compare ul{
+		padding-top: 10px;
+		text-align:left;
+	}
+	#compare .btn{
+		margin-bottom: 20px;
+	}
+	.updates{
+	margin:5px 0 20px 0;
+	}
+
+	#compare li{
+		width:106%;
+		list-style:none;
+		position: relative;
+		left:-30px;
+		padding: 7px 0px 10px 0px;
+	}
+	#compare .feature{
+		padding: 7px 0 7px 12px;
+		position: relative;
+		bottom:1px;
+	}
+	#compare .button{
+		width:250px;
+	}
+
+	/* sovrascrivo i css dei btn di bootstrap */
+	.btn-default{
+		border: 2px solid black;
+	}
+
+	#compare_mobile{
+		display:none;
+	}
+	#compare{
+		visibility: visible; 
+	}
+}
+/* mostro la versione mobile e nascondo quella desktop */
+@media (max-width:923px){
+	#compare_mobile{
+		visibility: visible; 
+	}
+	#compare{
+		display:none;
+	}
+	#compare_mobile>.container{
+		padding-top:50px;
+	}
+	#compare_mobile .pricing_chart{
+		padding: 30px 10px 20px 0px;
+	}
+	#compare_mobile .plan_title{
+		margin-bottom: 20px;
+	}
+	#compare_mobile .updates{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+
+	#compare_mobile .space{
+		display:inline-block;
+	}
+	#compare_mobile .cloud{
+		display:inline-block;
+	}
+	#compare_mobile .price1{
+		float: right;
+		position:relative;
+		bottom:30px;
+	}
+	#compare_mobile .price2{
+		float: right;
+		position:relative;
+		bottom:30px;
+	}
+	#compare_mobile .price3{
+		float: right;
+		position:relative;
+		bottom:30px;
+	}
+
+	#compare_mobile .plan_2{
+		border-top:1px solid #ddd;
+	}
+	#compare_mobile .plan_3{
+		border-top:1px solid #ddd;
+	}
+	#compare_mobile li{
+		width:106%;
+		list-style:none;
+		position: relative;
+		left:-30px;
+		padding: 7px 0px 10px 0px;
+	}
+	#compare_mobile .feature{
+		padding: 7px 0 7px 0px;
+		position: relative;
+		bottom:1px;
+	}
+	#compare_mobile .glyphicon{
+		position: relative;
+		left:-10px;
+	}
+	#compare .btn{
+		width:100%;
+		max-width:300px;
+	}
+}
+/* bottoni */
+.btn-default{
+	border: 1px solid black;
+}
+.btn-success{
+	border: 0px solid black;
+}
+
+.btn-default:hover{
+	border: 1px solid #69D75B;
+	background-color:white;
+	color: #69D75B;
+}
+.btn-success{
+	border: 0px solid black;
+	background:#69D75B;
+}

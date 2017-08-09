@@ -1,0 +1,45 @@
+/* css relativi al footer */
+
+/* posizionamento colonne */
+.col1, .col2{
+	max-width:300px;
+	display: inline-block;
+}
+.col2{
+	float: right;
+}
+.col3{
+	text-align:center;
+}
+
+#footer{
+	background:#fafafa;
+	width:100%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	padding:30px 50px 0px 50px;
+}
+
+#footer .logo{
+	display: inline-block;
+}
+
+@media (min-width: 924px) {
+	#footer{
+		height:130px;
+	}
+}
+
+@media (min-width:511px;) and (max-width: 925px) {
+	#footer{
+		height:160px;
+	}
+}
+/* mobile */
+@media (max-width: 510px) {
+	#footer{
+		height:240px;
+	}
+}
+
+
+

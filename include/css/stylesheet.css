@@ -1,0 +1,255 @@
+
+/* .title{	 */
+/* 	font-family:'Open Sans Semibold',sans-serif; */
+/* 	font-size:1.777rem; */
+/* 	font-weight:200; */
+/* } */
+
+.keyword{
+	padding-left:5px;
+	font-weight:800;
+}
+
+/* Header (THE BEST WAY TO RUN YOUR BUSINESS) */
+.home-header{
+	/* background-color: #2b3452; */
+	padding: 160px 0px 0px 0px;
+	/* background header */
+	position: relative;
+	background-image: url('../images/back-gradient.jpg');
+	background-size: 120% 120%;
+	background-position-x: center;
+	background-position-y: center;
+	padding-top: 133px;
+	padding-right: 15px;
+	padding-bottom: 185px;
+	padding-left: 15px;
+	top:0px;
+	height:450px;
+	width: 100%;
+	/* border: 1px solid red; */
+	z-index:-3;
+}
+
+/* posizione immagine divisoria */
+.division{
+	padding-top:150px;
+}
+
+/* div esterno per sfondo */
+.outter{
+	height: 300px;
+	background: #fafafa;
+	position: relative;
+	z-index:-1;
+}
+/* immagine divisoria */
+.outter>img{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top:-50px;
+	height: 50px;
+	z-index: 1;
+}
+/* immagini centrali */
+.outter .img-circleborder{
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(URL) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+/* Products */
+.products{
+	position: absolute;
+	margin-top: -100px;
+	left:0;
+	right:0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index:2;	
+}
+/* description */
+.t1>.description{
+	max-width:350px;
+	margin-top: 10px;
+	position:relative;
+	/* left:10px; */
+}
+
+
+/* centre elements */
+.centre{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+.img{
+	max-width: 160px;
+	max-height: 160px;
+}
+
+/* loghi customers */
+.customers_container{
+	position: absolute;
+	bottom: 0px;
+	left:0;
+	right:0;
+}
+
+.customers_logos{
+	max-width:1200px;
+	padding-top:20px;
+	padding-bottom:20px;
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	
+}
+
+.customers_logos div{
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.customers_logos img{
+	width:100px;
+	max-height:100px;	
+}
+
+
+/* tre immagini prodotti centrali */
+@media (min-width: 1000px){
+
+	.home-header{color:#fafafa;}
+	.products{
+		width: 900px;
+		/* background: blue; */
+		/* allinea immagini */
+		text-align: center;
+	}
+	.t1{
+		display: inline-block;
+		background:;
+		margin: 0px 60px;
+	}
+	#menu>.navMobile{
+		/* visibility: hidden; */
+	}
+
+}
+@media (min-width: 768px) and (max-width: 999px){
+	.home-header{color:#fafafa;}
+	.products{
+		width: 770px;
+		/* allinea immagini */
+		text-align: center;
+	}
+	.t1{
+		display: inline-block;
+		/* background:yellow; */
+		margin: 0px 40px;
+	}
+	#menu>.navMobile{
+		/* visibility: hidden; */
+	}
+
+}
+
+@media (max-width: 767px) {
+	.products{
+		width: 100%;
+	}
+	.logo{color:black;}
+
+	.home-header{
+		background: #fafafa;
+		height: 380px; 
+		padding-top: 100px;
+		padding-right: 14px;
+		padding-bottom: 325px;
+		padding-left: 14px;
+	}
+	.header_subtitle{
+		padding-top:20px;
+		padding-bottom:20px;
+		line-height: 1.6;
+		z-index:10;
+	}
+
+	.outter{
+		height: 840px;
+		padding-top:40px;
+	}
+	.outter>img{
+		visibility: hidden;
+	}
+	.t1{
+		margin: 0px 0px 60px 0px;
+		text-align: center;
+	}
+	.t1>.description{
+		margin-top: 10px;
+		margin-left:auto;
+		margin-right:auto;
+	
+	}
+	.img{
+		max-width:150px;
+		max-height:150px;
+	}
+	/* gestione loghi customers */
+	.customers_container{
+		margin-top:150px;
+	}
+
+	.customers_logos{
+		/* bottom:0; */
+	}
+}
+
+@media  (min-width: 379px) and (max-width: 683px) {
+/* @media (max-width: 490px) { */
+	.outter{
+		padding-top:120px;
+		height: 1050px;
+	}
+	.home-header{
+		z-index:1;
+	}
+}
+
+@media (max-width: 378px) {
+/* @media (max-width: 490px) { */
+	.outter{
+		padding-top:260px;
+		height: 1050px;
+	}
+	.home-header{
+		z-index:1;
+	}
+}
+
+
+
+/*  */
+/* DELETE */
+/* @media (min-width: 1148px){ */
+/* 	.logo8{ */
+/* 		/* visibility: visible; */ */
+/* 	} */
+/* } */
+/* @media (max-width: 1147px){ */
+/* 	.logo8{ */
+/* 		/* visibility: hidden; */ */
+/* 	} */
+/* } */
+/*  */

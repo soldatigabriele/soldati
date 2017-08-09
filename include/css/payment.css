@@ -1,0 +1,142 @@
+/* css relativi alla pagina payment.php  */
+
+html{
+    min-height:100%;
+    position:relative;
+}
+body{
+    height:100%; 
+}
+/* posizione menu */
+#menu{
+	position:absolute;top:0;}
+#payment{
+	background: white;
+	padding:130px 0px;
+}
+.subscribe{
+	background:#fafafa;
+	max-width: 750px;
+	width:750px;
+	border: 1px solid #ddd;
+	margin:auto;
+	height:400px;
+	position:relative;
+}
+.left{
+	position:absolute;
+	width: 60%;
+	height:100%;
+	padding:20px;
+}
+.right{
+	position:absolute;
+	left:60%;	
+	width: 40%;
+	height:100%;
+	padding:20px;
+	border-left: 1px solid #ddd;	
+}
+.month{
+	width: 80px;
+	display:inline-block;
+}
+.year{
+	width: 80px;
+	display:inline-block;
+}
+ul{
+	list-style:none;
+}
+/* sovrascrivo la classe .stack di foundation per rendere i pulsanti verdi */
+.stack .button{
+	width:100%;
+	background:white;
+	color:black;
+	border: 1px solid #ddd;
+	text-decoration:none;
+	border-radius:4px;
+}
+select{
+	border-radius:4px;
+}
+.stack .button:hover{
+	background:#69D75B;
+	color:white;
+	border: 1px solid #69D75B;
+	text-decoration:none;
+}
+.stack .button:focus{
+	background:#69D75B;
+	border: 1px solid #69D75B;	
+	color:white;
+	text-decoration:none;
+}
+.choose_plan{
+	position:relative;
+	left:-34%;
+	top:0px;
+}
+
+.left>div{
+	padding-bottom:10px;
+}
+
+/* immagini dei circuiti */
+.creditcard{
+	display:inline-block;
+	float:right;
+	width:130px;
+	height:19px;
+	position:relative;
+	left:-30px;
+	top:30px;
+	background:url('../images/creditcard.png');
+}
+/* scritta 'billed monthly' */
+.billed{
+	position:relative;
+	top:-15px;
+	left:5px;
+}
+.payment_button{
+	width:50%;
+	height:38px;
+	position:absolute;
+	margin:auto;
+	left:0;
+	right:0;
+	bottom:-27px;
+}
+
+.payment_button{
+	background:#5398cd;
+	border:1px solid #3385D1; !important
+}
+/* problema visualizzazione immagine */
+@media(max-width:991px){
+	.creditcard{
+		display:none;
+	}
+}
+
+/* versione mobile */
+@media (min-width:756px){
+	#payment_mobile{
+		display:none;
+	}
+	#payment{
+		visibility: visible; 
+	}
+}
+@media (max-width:755px){
+	#payment{
+		display:none;
+	}
+	#payment_mobile{
+		visibility: visible; 
+		background: white;
+		padding:80px 20px;
+	}
+}
+

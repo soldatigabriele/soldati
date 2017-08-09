@@ -1,0 +1,175 @@
+/* css relativi alla sezione testimonial  */
+.teste{
+background: #fafafa;
+padding-top: 40px;
+padding-bottom: 40px;
+border-top:1px solid #ddd;
+}
+
+/* questa classe gestisce il posizionamento del testo sopra le immagini */
+/* e la trasformazione delle immagini al passaggio del mouse */
+.photo-grid {
+    position:relative;
+    right:26px;
+    margin: 1em auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    max-width: 1280px;
+    text-align: center;
+}
+
+.photo-grid li {
+    border: 0px solid white;
+    display: inline-block;
+    margin: 0px 10px;
+    width: 540px;
+}
+
+.photo-grid img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.photo-grid figure {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 555px;
+}
+
+.photo-grid figcaption {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    display: table;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding:0px 5px;
+}
+
+.photo-grid figcaption p {
+    display: table-cell;
+    /* display: block; */
+    font-size: 1.3em;
+    position: relative;
+    top: -40px;
+    width: 555px;
+    vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption {
+    opacity: 1;
+}
+
+.photo-grid img {
+    display: block;
+    /*height: auto;*/
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+    max-width: 100%;
+}
+
+.photo-grid li:hover img {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.photo-grid figcaption p {
+    display: table-cell;
+    font-size: 1.5em;
+    position: relative;
+    top: -40px;
+    width: 555px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption p {
+    -moz-transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+}
+
+.photo-grid figcaption {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    display: table;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms;
+    z-index: 100;
+}
+
+/* desktop */
+@media (min-width:694px){
+
+	#testimonials_mobile{
+		display:none;
+	}
+	#testimonials{
+		visibility: visible; 
+	}
+}
+/* mobile */
+@media (max-width:693px){
+	#testimonials{
+		display:none;
+	}
+	#testimonials_mobile{
+		visibility: visible;
+		padding-top:30px;
+	}
+	
+	#testimonials_mobile ul{
+		list-style: none;
+	}
+	#testimonials_mobile li{
+		display: inline-block;
+	}
+	#testimonials_mobile img{
+		max-width: 100%;
+		padding-top:40px;
+	}
+	
+	#testimonials_mobile .testimonials_images{
+		width:346px;
+		text-align:center;
+		margin: auto;
+	}
+	#testimonials_mobile .testimonials_images .subtitle{
+		text-align:left;
+		position: relative;
+		top: 7px;
+	}
+	#testimonials_mobile .testimonials_images .text{
+		text-align:left;
+	}
+}
+/* correzione bug */
+@media ( min-width:1313px ){
+	.photo-grid li {
+	    border: 0px solid white;
+	    display: inline-block;
+	    margin: 20px 30px;
+	    width: 540px;
+	}
+}
+
